@@ -1,0 +1,374 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.582) !important;
+}
+
+* {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body h2 {
+  text-align: center;
+  color: rgb(255, 4, 4);
+  font-size: 40px;
+  padding: 35px;
+}
+
+
+/*Encabezado*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  background-color: #000000;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px rgba(145, 1, 1, 0.804);
+}
+
+a {
+  text-decoration: none;
+  color: #ff0000c2;
+}
+
+nav,
+a {
+  font-weight: bold;
+  margin-right: 20px;
+  display: flex;
+}
+
+nav,
+a:hover {
+  color: white;
+}
+
+#LogoGeneral {
+  height: 150px;
+  align-items: center;
+  background-color: #000000;
+}
+
+
+
+/*Sobre Nosotros*/
+
+
+.Cuerpo {
+  margin-top: 200px;
+}
+
+.SobreNosotros {
+  text-align: center;
+  color: #000000;
+  font-size: x-large;
+}
+
+
+.Servicios {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+/*Servicios Cards*/
+
+.ContenedorCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 3px #ff000080;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 1, 1, 0.318);
+}
+
+.card__contenido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__contenido {
+  transform: rotateX(0deg);
+}
+
+.card__titulo {
+  margin: 0;
+  font-size: 24px;
+  color: #ff0000c2;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__descripcion {
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+span {
+  font-weight: bold;
+}
+
+/*Profesionales*/
+
+.ContenedorCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.carousel {
+  width: 500px;
+  box-shadow: 0 0 5px #ae1717;
+}
+
+/**Pie**/
+
+.Map {
+  gap: 20px;
+}
+
+/*Contacto*/
+
+.TarjetaContacto {
+  width: auto;
+  height: auto;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.containerFour {
+  display: flex;
+  margin-right: auto;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.Contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/*Información personal*/
+
+.human-resources {
+  --bg-color: #DCE9FF;
+  --bg-color-light: #f1f7ff;
+  --text-color-hover: #4C5656;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.Programador {
+  width: 220px;
+  height: 321px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(2, 170, 216, 0.474);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Programador:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.Programador:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.Programador:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.Programador:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.Programador:hover p {
+  color: var(--text-color-hover);
+}
+
+.Programador:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.Programador p {
+  font-size: 17px;
+  color: #4C5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC Impass</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="icon" href="./Imagenes/IconoRojo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Oswald&family=Roboto+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <a id="ImgLink" href="https://www.instagram.com/scimpassgymcenter/">
+            <img id="LogoGeneral" src="./Imagenes/LogoGeneral.png" alt="SC Impass">
+        </a>
+        <nav>
+            <a href="#Inicio" class="nav-link">INICIO</a>
+            <a href="#Servicios" class="nav-link">SERVICIOS</a>
+            <a href="#Profesionales" class="nav-link">PROFESIONALES</a>
+            <a href="#Contacto" class="nav-link">CONTACTO</a>
+        </nav>
+    </header>
+    <main>
+        <div class="Cuerpo">
+            <div class="SobreNosotros" id="Inicio">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>SC Impass Gym se enorgullece de ser tu gimnasio de confianza. Nos destacamos por ser más que un
+                    simple
+                    gimnasio; somos un equipo de entusiastas del fitness comprometidos a ayudarte a alcanzar tus metas
+                    personales. </p>
+                <p>Nuestro equipo de entrenadores altamente capacitados está aquí para guiarte y motivarte en
+                    cada paso de tu viaje hacia una vida más saludable.</p>
+            </div>
+            <div class="Servicios" id="Servicios">
+                <h2>SERVICIOS</h2>
+                <div class="ContenedorCards">
+                    <div class="card">
+                        <img src="Imagenes/MusculacionS.jpg" alt="">
+                        <div class="card__contenido">
+                            <p class="card__titulo">Musculación</p>
+                            <p class="card__descripcion">La <span>musculación</span> es uno de nuestros pilares
+                                fundamentales. Nuestro área de musculación te brinda acceso a una amplia gama de equipos
+                                diseñados para ayudarte a fortalecer tu cuerpo. Ya sea que seas un principiante o un
+                                experimentado, nuestros entrenadores están disponibles para ofrecerte asesoramiento y
+                                programas personalizados que se adapten a tus objetivos específicos.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Imagenes/NatacionS.jpg" alt="">
+                        <div class="card__contenido">
+                            <p class="card__titulo">Natación</p>
+                            <p class="card__descripcion">La <span>natación</span> es una parte esencial de nuestro
+                                compromiso con un estilo de vida activo y saludable. Nuestra piscina es el lugar
+                                perfecto
+                                para mejorar tu técnica de natación, mantenerte en forma y disfrutar de un ejercicio
+                                completo y de bajo impacto. Nuestro equipo de instructores te brindará lecciones
+                                personalizadas para que te sientas seguro y cómodo en el agua.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Imagenes/pilates.jpg" alt="">
+                        <div class="card__contenido">
+                            <p class="card__titulo">Pilates</p>
+                            <p class="card__descripcion">Nuestro servicio de <span>pilates</span> es una invitación a
+                                descubrir una forma única de ejercitarte. Te ofrecemos un ambiente tranquilo y enfocado,
+                                perfecto para mejorar tu fuerza, flexibilidad y equilibrio. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Profesionales" id="Profesionales">
+                <h2>NUESTROS PROFESIONALES</h2>
+                <div class="ContenedorCarousel">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Imagenes/Profesional-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Imagenes/Profesional-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Imagenes/Profesional-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Imagenes/Profesional-4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="Contacto" id="Contacto">
+            <h2>UBICACIÓN Y CONTACTO</h2>
+            <div class="Map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4271.893033468057!2d-63.540120723465975!3d-31.55690820306004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94332a4d909daa79%3A0x42a64bc285300d79!2sSC%20Impass%20Gym%20Center!5e1!3m2!1ses-419!2sar!4v1698199480174!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="TarjetaContacto">
+                <a href="https://www.instagram.com/scimpassgymcenter/" class="socialContainer containerOne">
+                    <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.whatsapp.com/?lang=es_LA" class="socialContainer containerFour">
+                    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="InfoMia">
+            <h2>WEB</h2>
+            <a class="Programador" href="https://github.com/benjaluduena">
+                <div class="overlay"></div>
+                <div class="circle">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        viewBox="1855 26 66 77" height="77px" width="66px">
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g transform="translate(1855.000000, 26.000000)" fill-rule="evenodd" fill="none"
+                            stroke-width="1" stroke="none" id="Page-1">
+                            <path fill="#AFCEFF" id="Fill-8"
+                                d="M4.28872448,42.7464904 C4.28872448,39.3309774 5.4159227,33.7621426 6.40576697,30.4912557 C10.5920767,32.1098991 14.3021264,35.1207513 18.69596,35.1207513 C30.993618,35.1207513 42.5761396,28.7162991 49.9992251,17.9014817 C56.8027248,23.8881252 60.8188351,33.0463165 60.8188351,42.7464904 C60.8188351,60.817447 47.6104607,76.6693426 32.5537798,76.6693426 C17.4970989,76.6693426 4.28872448,60.817447 4.28872448,42.7464904">
+                            </path>
+                            <path fill="#3B6CB7" id="Fill-10"
+                                d="M64.3368879,31.1832696 L62.8424171,46.6027478 L60.6432609,46.7824348 L59.8340669,34.6791304 L47.6573402,25.3339478 C44.2906753,34.068487 34.3459503,40.2903304 24.4684093,40.2903304 C17.7559812,40.2903304 10.046244,37.4168 5.80469412,32.8004522 L5.80469412,34.6791304 L5.80469412,46.6027478 L4.28932167,46.6027478 L1.30187314,27.8802435 C1.30187314,20.9790957 3.52342407,15.5432 7.27229127,11.3578087 C13.132229,4.79558261 21.8124018,0.0492173913 30.5672235,0.342852174 C37.4603019,0.569286957 42.6678084,2.72991304 50.8299179,0.342852174 C51.4629405,1.44434783 51.8615656,3.00455652 51.5868577,5.22507826 C51.4629405,6.88316522 51.2106273,7.52302609 50.8299179,8.45067826 C58.685967,14.1977391 64.3368879,20.7073739 64.3368879,31.1832696">
+                            </path>
+                            <path fill="#568ADC" id="Fill-13"
+                                d="M58.9405197,54.5582052 C62.0742801,54.8270052 65.3603242,52.60064 65.6350321,49.5386574 C65.772386,48.009127 65.2617876,46.5570226 64.3182257,45.4584487 C63.3761567,44.3613357 62.0205329,43.6162922 60.4529062,43.4818922 L58.9405197,54.5582052 Z">
+                            </path>
+                            <path fill="#568ADC" id="Fill-15"
+                                d="M6.32350389,54.675367 C3.18227865,54.8492104 0.484467804,52.4957496 0.306803449,49.4264626 C0.217224782,47.8925496 0.775598471,46.4579757 1.75200594,45.3886191 C2.7284134,44.3192626 4.10792487,43.6165843 5.67853749,43.530393 L6.32350389,54.675367 Z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <p>Benjamin Ludueña</p>
+            </a>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
